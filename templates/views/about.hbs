@@ -1,17 +1,50 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>About</title>
-    <link rel="icon" href="/img/weather.png">
-    <link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+
+    <!-- link styles.css -->
+    <link rel="stylesheet" href="./css/about.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
-    <div class="main-content">
-      {{>header}}
-      <img src="/img/1.jpg" class="portrait" alt="Creater pic">
-      <p>{{aboutText}}</p>
+    <div class="profile-card">
+      <div class="image">
+        <img src="./img/1.jpg" alt="creator-profile-pic" class="profile-image" />
+      </div>
+      <div class="text-data">
+        <span class="name">Shamant Myageri</span>
+        <span class="job">Computer Science Engineer</span>
+      </div>
+      <div class="media-buttons">
+        <a
+          href="https://github.com/Sam-111001"
+          style="background-color: #171515"
+          class="link"
+        >
+          <i class="bx bxl-github"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/shamantmyageri/"
+          style="background-color: #e1306c"
+          class="link"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+        <a href="#" style="background-color: #4267b2" class="link">
+          <i class="bx bxl-facebook"></i>
+        </a>
+      </div>
+      <div class="contact-button">
+        <button class="button">Contact</button>
+      </div>
     </div>
-    
-    {{>footer}}
   </body>
 </html>
