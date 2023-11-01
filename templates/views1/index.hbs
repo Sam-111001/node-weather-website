@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png" />
+    <link rel="stylesheet" href="/css/newstyles.css" />
+    <!-- boxicon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .home{
+        background-color: #a593ea;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-title">WEATHER</div>
+      <div class="content">
+        {{>contentnav}}
+        <div class="text-content">
+          <p>Get your city weather details here.</p>
+          <form action="" class="input-form">
+            <input type="text" placeholder="Location" />
+            <button>Search</button>
+          </form>
+          <div class="output-text">
+            <p id="message-1"></p>
+          <p id="message-2"></p>
+          </div>         
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

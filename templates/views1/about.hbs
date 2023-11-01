@@ -1,21 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card</title>
-
-    <!-- link styles.css -->
-    <link rel="stylesheet" href="./css/about.css" />
-
-    <!-- Boxicons CSS -->
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png" />
+    <link rel="stylesheet" href="/css/newstyles.css" />
+    <link rel="stylesheet" href="/css/about.css">
+    <!-- boxicon link -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <style>
+      .about{
+        background-color: #a593ea;
+      }
+    </style>
   </head>
   <body>
-    <div class="profile-card">
+    <div class="container">
+      <div class="main-title">WEATHER</div>
+      <div class="content">
+        {{>contentnav}}
+        <div class="text-content">
+          <div class="profile-card">
       <div class="image">
         <img src="./img/1.jpg" alt="creator-profile-pic" class="profile-image" />
       </div>
@@ -44,6 +50,10 @@
       </div>
       <div class="contact-button">
         <button class="button">Contact</button>
+      </div>
+    </div>
+                   
+        </div>
       </div>
     </div>
   </body>

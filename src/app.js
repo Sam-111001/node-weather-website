@@ -10,7 +10,7 @@ const app = express();
 
 //Path configuration
 const publicDirectoryPath = path.join(__dirname, "../public");
-const viewsDirectoryPath = path.join(__dirname, "../templates/views");
+const viewsDirectoryPath = path.join(__dirname, "../templates/views1");
 const partialsDirectoryPath = path.join(__dirname, "../templates/partials");
 
 //Setting up handelbars location and views location
