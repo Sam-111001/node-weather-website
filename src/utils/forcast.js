@@ -2,11 +2,8 @@ const request = require("request");
 
 const forcast = (location, callback) => {
   const url =
-    "https://api.openweathermap.org/data/2.5/weather?lat=" +
-    encodeURIComponent(location.lat) +
-    "&lon=" +
-    encodeURIComponent(location.lon) +
-    "&appid=79671ec1225675da2b532a0da0676d2f&units=metric";
+    "http://api.weatherapi.com/v1/current.json?key=c23a49f309ed4daa98b214615233110&aqi=no&q=" +
+    encodeURIComponent(location);
 
   request({ url: url, json: true }, (error, response) => {
     if (error) {
